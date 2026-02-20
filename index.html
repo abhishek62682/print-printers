@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    :root {
+  --primary: #1565C0;
+  --secondary: #0D1B3E;
+  --accent: #2196F3;
+  --white: #ffffff;
+  --light-blue: #E3F2FD;
+}
+
+/* BG */
+.bg-primary   { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent    { background-color: var(--accent); }
+.bg-light     { background-color: var(--light-blue); }
+.bg-white     { background-color: var(--white); }
+
+/* TEXT */
+.text-primary   { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-accent    { color: var(--accent); }
+.text-white     { color: var(--white); }
+.text-light     { color: var(--light-blue); }
+  </style>
+
+  <title>Home | Print Printers</title>
+</head>
+
+<body>
+  <div class="root">
+
+
+    <div class="slide-menu-frame mt-[72px] pb-[96px] pt-[24px] px-[18px]  bg-white  w-full h-screen  z-80 fixed   ">
+
+
+      <ul class="font-primary relative flex flex-col gap-[24px] items-start text-[14px] leading-[20px ]">
+        <li class="cursor-pointer py-3 px-4 rounded-[6px] w-full  font-medium  text-[20px] leading-[1.4rem]">Overview
+        </li>
+        <li class="cursor-pointer py-3 px-4 rounded-[6px] w-full  font-medium  text-[20px] leading-[1.4rem]">What We Print
+        </li>
+
+         <li class="cursor-pointer py-3 px-4 rounded-[6px] w-full  font-medium  text-[20px] leading-[1.4rem]"> Why Us
+        </li>
+
+         <li class="cursor-pointer py-3 px-4 rounded-[6px] w-full  font-medium  text-[20px] leading-[1.4rem]">Our Process</li>
+            <li class="cursor-pointer py-3 px-4 rounded-[6px] w-full  font-medium  text-[20px] leading-[1.4rem]">Certifications</li>
+            <li class="cursor-pointer py-3 px-4 rounded-[6px] w-full  font-medium  text-[20px] leading-[1.4rem]">Clients</li>
+        
+
+        <li class="w-full">
+
+          <button
+  class="text-[14px] shrink-0 btn-animate cursor-pointer font-medium w-full font-primary rounded-full text-white leading-[20px] border text-[14px] h-[50px] px-[18px] bg-primary border-primary">
+  <span class="block h-full flex justify-center items-center shrink-0">Get a Quote</span>
+  <span class="block h-full flex justify-center items-center shrink-0">Get a Quote</span>
+</button>
+
+        </li>
+
+
+
+      </ul>
+
+
+
+
+    </div>
+
+
+    <!-- <div
+        class="information-dropdown opacity-0 shadow gap-4 p-[9px] rounded-[6px] flex w-fit z-20 bg-white mt-[65px] fixed left-[55%] -translate-x-1/2"
+      >
+        <ul class="flex-1">
+          <li>Style Guide</li>
+          <li>Licenses</li>
+          <li>Changelog</li>
+          <li>More Templates</li>
+        </ul>
+      </div> -->
+
+    <div>
+      <section
+        class="w-full sticky backdrop-blur-md top-0 left-0 z-20 md:static  relative backdrop-blur-md bg-white/70 border-b border-[#0000001a]">
+        <nav class="h-[72px]   w-full md:gap-0 gap-3  max-w-8xl mx-auto px-4 md:px-6 flex justify-between items-center">
+          <div class="flex-1 flex justify-start">
+            
+           <h2 class="font-medium text-[20px]">Print Printers</h2>
+          </div>
+
+          <ul class="font-primary relative hidden md:flex flex gap-[36px] items-center text-[14px] leading-[20px ]">
+            <li class="cursor-pointer hidden md:block">About Us</li>
+            <li  class="cursor-pointer hidden md:flex relative  flex gap-[3px]">
+              What We Print
+
+             
+            </li>
+            <li  class="hidden md:flex relative gap-[3px] cursor-pointer">
+              Why Us
+
+             
+            </li>
+            <li>Our Process</li>
+            <li class="cursor-pointer">Certifications</li>
+            <li class="cursor-pointer">Clients</li>
+
+
+          </ul>
+
+          <i id="hamburger" class="ri-menu-3-line  md:hidden  text-[24px] p-4"></i>
+          <i id="closed" class="ri-close-line d-none md:hidden text-[24px] p-4"></i>
+
+
+          <div class="nav-right hidden md:flex flex-1 shrink-0  gap-3 justify-end items-center">
+            
+
+           <button
+  class="border btn-dark shrink-0 cursor-pointer btn-animate font-medium overflow-hidden font-primary rounded-full text-[14px] leading-[20px] h-[39px] px-6 border-primary text-primary">
+  <span class="block h-full flex justify-center items-center shrink-0">View Work</span>
+  <span class="block h-full flex justify-center items-center">View Work</span>
+</button>
+
+<button
+  class="text-[14px] shrink-0 btn-animate cursor-pointer font-medium font-primary rounded-full text-white leading-[20px] border text-[14px] h-[39px] px-[18px] bg-primary border-primary">
+  <span class="block h-full flex justify-center items-center shrink-0">Get a Quote</span>
+  <span class="block h-full flex justify-center items-center shrink-0">Get a Quote</span>
+</button>
+          </div>
+        </nav>
+      </section>
+<section class="section-spacing-y mt-[72px]">
+  <div class="max-w-8xl space-y-[72px] container hero-frame">
+    <div class="hero-content font-medium flex flex-col items-center gap-6">
+      
+      <div class="tagline relative z-[-10] text-[14px] leading-[20px] opacity-[0.6] font-medium text-secondary">
+        A Division of Citicap Channels Pvt. Ltd.
+      </div>
+
+      <h2 class="text-[40px] md:text-[56px] leading-[1.1] text-center md:leading-[62px] text-secondary">
+        From File to Finished Book <br class="hidden md:block" />
+        We Manage It All
+      </h2>
+
+      <p class="text-center leading-[24px] text-[17px] text-secondary">
+        30+ years of expert book printing — Religious Books, Novels, Children's Books & more. <br class="hidden md:block" />
+        Proudly serving the US, UK, Canada, Australia & Middle East since 1992.
+      </p>
+
+      <div class="flex items-center gap-4">
+        <button class="border btn-dark shrink-0 cursor-pointer btn-animate font-medium overflow-hidden font-primary rounded-full text-[14px] leading-[24px] h-[50px] px-6 border-primary text-primary">
+          <span class="block h-full flex justify-center items-center shrink-0">View Our Work</span>
+          <span class="block h-full flex justify-center items-center">View Our Work</span>
+        </button>
+
+        <button class="text-[14px] btn-animate border-primary font-medium font-primary rounded-full text-white leading-[24px] border h-[50px] px-[18px] bg-primary">
+          <span class="block h-full flex justify-center items-center shrink-0">Request a Quote</span>
+          <span class="block h-full flex justify-center items-center shrink-0">Request a Quote</span>
+        </button>
+      </div>
+
+      <div class="flex items-center gap-[6px] opacity-[0.5]">
+  <span class="text-[14px] leading-[20px] text-secondary">4.2 Rating</span>
+  <div class="flex text-primary">
+    <i class="ri-star-s-fill"></i>
+    <i class="ri-star-s-fill"></i>
+    <i class="ri-star-s-fill"></i>
+    <i class="ri-star-s-fill"></i>
+    <i class="ri-star-s-line"></i>
+  </div>
+  <span class="text-[14px] leading-[20px] text-secondary">224 Reviews</span>
+</div>
+
+    </div>
+
+    <div class="project-showecase mx-auto gap-[6px] w-full grid grid-cols-12">
+      <div class="w-full h-[458px] overflow-hidden rounded-[12px] col-span-12 md:col-span-6">
+        <img class="w-full h-full object-cover"
+          src="./assets/hero-product-one.png" alt="" />
+      </div>
+      <div class="w-full h-[458px] overflow-hidden rounded-[12px] col-span-12 md:col-span-6">
+        <img class="w-full h-full object-cover"
+          src="/assets/hero-product.png" alt="" />
+      </div>
+    </div>
+
+  </div>
+</section>
+      <!-- <section>
+        <div class="container">
+          <div class="w-full section-spacing vertical-layout-gap">
+            <div class="w-full flex items-start flex-col gap-5">
+              <div
+                class="section-content leading-[1.1] font-medium text-[28px] md:text-[40px] max-w-full md:max-w-6/10 md:leading-[46px]">
+                All killer, no filler.
+                <span class="faded-text">Artifact is brimming with premium layouts and sections
+                  designed with true purpose.</span>
+                No copy-paste clones.
+              </div>
+
+              <button
+                class="text-[14px] btn-animate font-medium font-primary rounded-full text-white leading-[24px] border text-[17px] h-[50px] px-[18px] bg-black">
+                <span class="block h-full flex justify-center items-center shrink-0">Buy Artifact</span><span
+                  class="block h-full flex justify-center items-center shrink-0">Buy Artifact</span>
+              </button>
+            </div>
+
+            <div class="grid-layout-three gap-[6px] grid grid-cols-12">
+              <div class="col-span-12 md:col-span-4 card-wrapper shadow rounded-[4px] overflow-hidden">
+                <div class="card-top bg-[#e8e6e3] w-full overflow-hidden h-[300px] px-6 pt-6">
+                  <img class="w-full object-[center_top] h-full object-cover"
+                    src="https://cdn.prod.website-files.com/67bd4583544503c3feb08305/67cfcd5a8b69e28511e44efe_Product%20Features%201.webp"
+                    alt="" />
+                </div>
+
+                <div class="card-bottom p-6 space-y-[72px] bg-white">
+                  <p class="text-[20px] font-medium leading-[26px]">
+                    20+ Pages.<span class="faded-text">
+                      Hit the ground running with a variety of stylish pages to
+                      suit multiple purposes.</span>
+                  </p>
+
+                  <button
+                    class="px-6 border btn-dark btn-animate overflow-hidden rounded-full border-[#0000001a] h-[39px]  text-[14px] leading-[20px] ">
+                    <span class="block h-full flex justify-center items-center shrink-0">See Pages</span>
+                    <span class="block h-full flex justify-center items-center shrink-0">See Pages</span>
+
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-12 md:col-span-4 card-wrapper shadow rounded-[4px] overflow-hidden">
+                <div
+                  class="card-top bg-[#e8e6e3] flex flex-col justify-between w-full overflow-hidden h-[300px] px-6 pt-6">
+                  <img class="w-6/10 object-[center_top] mx-auto object-cover"
+                    src="https://cdn.prod.website-files.com/67bd4583544503c3feb08305/67d3593eed8697e7f3cc21d9_section-01.webp"
+                    alt="" />
+
+                  <img class="w-6/10 object-[center_top] mx-auto object-cover"
+                    src="https://cdn.prod.website-files.com/67bd4583544503c3feb08305/67d3593ec1379757d14945f4_section-02.webp"
+                    alt="" />
+                </div>
+
+                <div class="card-bottom p-6 space-y-[72px] bg-white">
+                  <p class="text-[20px] font-medium leading-[26px]">
+                    60+ Sections.<span class="faded-text">
+                      Build your own page layouts in moments with tons of
+                      hand-crafted sections.</span>
+                  </p>
+
+                  <button
+                    class="px-6 border btn-dark btn-animate overflow-hidden rounded-full border-[#0000001a] h-[39px]  text-[14px] leading-[20px]">
+                    <span class="block h-full flex justify-center items-center shrink-0">Start Now</span>
+                    <span class="block h-full flex justify-center items-center shrink-0">Start Now</span>
+
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-12 md:col-span-4 card-wrapper shadow rounded-[4px] overflow-hidden">
+                <div
+                  class="card-top bg-[#e8e6e3] flex flex-col justify-between w-full overflow-hidden h-[300px] px-6 pt-6">
+                  <img class="w-full h-full object-[center_top] mx-auto object-cover"
+                    src="https://cdn.prod.website-files.com/67bd4583544503c3feb08305/67d359ce6b09fd09d127d54e_variables.webp"
+                    alt="" />
+                </div>
+
+                <div class="card-bottom p-6 space-y-[72px] bg-white">
+                  <p class="text-[20px] font-medium leading-[26px]">
+                    60+ Sections.<span class="faded-text">
+                      Build your own page layouts in moments with tons of
+                      hand-crafted sections.</span>
+                  </p>
+
+                  <button
+                    class="px-6 btn-dark btn-animate border rounded-full border-[#0000001a] h-[39px]  text-[14px] leading-[20px] overflow-hidden">
+
+                    <span class="block h-full flex justify-center items-center shrink-0">Preview in Webflow</span>
+                    <span class="block h-full flex justify-center items-center shrink-0">Preview in Webflow</span>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+<section class="bg-light">
+  <div class="container">
+    <div class="w-full section-spacing vertical-layout-gap">
+      <div class="w-full grid grid-cols-12 overflow-hidden justify-between gap-y-[72px] md:gap-[72px]">
+        
+        <div class="col-span-12 md:col-span-6 h-auto  space-y-[72px]">
+          <div class="top-content w-full space-y-[24px]">
+            <div class="tagline text-[14px] leading-[20px] opacity-[0.6] font-medium text-secondary">
+              Established 1992 · New Delhi, India
+            </div>
+
+            <h2 class="text-[40px] md:text-[56px] font-medium leading-[1.1] md:leading-[62px] text-secondary">
+              Three Decades of Print Excellence
+            </h2>
+
+            <button class="text-[14px] btn-animate overflow-hidden border-primary font-medium font-primary rounded-full text-white leading-[24px] border h-[50px] px-[18px] bg-primary">
+              <span class="block h-full flex justify-center items-center shrink-0">Request a Quote</span>
+              <span class="block h-full flex justify-center items-center shrink-0">Request a Quote</span>
+            </button>
+          </div>
+
+          <div class="bottom-content space-y-[24px] max-w-full md:max-w-[60%]">
+            <p class="text-[17px] font-medium leading-[24px] text-secondary">
+              Professionally Managed.
+              <span class="faded-text">
+                Print Printers, a division of Citicap Channels Pvt. Ltd, has been delivering premium book printing solutions to global clients since 1992.
+              </span>
+            </p>
+
+            <p class="text-[17px] font-medium leading-[24px] text-secondary">
+              Global Reach.
+              <span class="faded-text">
+                Serving clients across the US, Canada, UK, Australia, Middle East & South America with seamless and transparent customer experience.
+              </span>
+            </p>
+
+            <button class="px-6 btn-dark btn-animate overflow-hidden border rounded-full border-primary h-[39px] text-[14px] leading-[20px] text-primary">
+              <span class="block h-full flex justify-center items-center shrink-0">Learn More</span>
+              <span class="block h-full flex justify-center items-center shrink-0">Learn More</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 h-auto relative rounded-[6px]">
+          <div class="rounded-[6px] overflow-hidden w-full h-full">
+            <div class="absolute inset-0 z-[12] pointer-events-none rounded-[6px] bg-secondary opacity-20"></div>
+            <img class="w-full h-full object-cover" src="./assets/about.png" alt="Print Printers Factory" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-white">
+  <div class="container">
+    <div class="w-full section-spacing vertical-layout-gap">
+      
+      <div class="w-full flex items-start flex-col gap-5">
+        <div class="section-content leading-[1.1] font-medium text-[28px] md:text-[40px] max-w-full md:max-w-6/10 md:leading-[46px] text-secondary">
+          Our Leaders.
+          <span class="faded-text">30+ years of expertise driving Print Printers' global reputation.</span>
+        </div>
+      </div>
+
+      <div class="gap-[6px] grid gap-y-6 grid-cols-12">
+
+        <!-- Ashish Bansal -->
+        <div class="col-span-12 md:col-span-4 card-wrapper shadow rounded-[4px] overflow-hidden">
+          <div class="card-top bg-secondary w-full overflow-hidden h-[400px]">
+            <img class="w-full h-full object-cover " src="/assets/common/ashish.png" alt="Ashish Bansal" />
+          </div>
+          <div class="card-bottom p-6 space-y-[12px] bg-white border-t-[3px] border-primary">
+            <p class="text-[11px] font-medium tracking-widest text-accent uppercase">Founder</p>
+            <p class="text-[22px] font-medium leading-[28px] text-secondary">Ashish Bansal</p>
+            <p class="faded-text text-[14px] leading-[20px]">Head — Business. The visionary behind Print Printers' three decade journey in global book printing.</p>
+          </div>
+        </div>
+
+        <!-- Apoorv Bansal -->
+        <div class="col-span-12 md:col-span-4 card-wrapper shadow rounded-[4px] overflow-hidden">
+          <div class="card-top bg-secondary w-full overflow-hidden h-[400px]">
+            <img class="w-full h-full object-cover object-top" src="/assets/common/ab-app.png" alt="Apoorv Bansal" />
+          </div>
+          <div class="card-bottom p-6 space-y-[12px] bg-white border-t-[3px] border-primary">
+            <p class="text-[11px] font-medium tracking-widest text-accent uppercase">Client Relations</p>
+            <p class="text-[22px] font-medium leading-[28px] text-secondary">Apoorv Bansal</p>
+            <p class="faded-text text-[14px] leading-[20px]">Head — Client Communications. Ensuring seamless and transparent experience for every global client.</p>
+          </div>
+        </div>
+
+        <!-- Ajay Pandit -->
+        <div class="col-span-12 md:col-span-4 card-wrapper shadow rounded-[4px] overflow-hidden">
+          <div class="card-top bg-secondary w-full overflow-hidden h-[400px]">
+            <img class="w-full h-full object-cover object-top" src="/assets/common/neel.png" alt="Ajay Pandit" />
+          </div>
+          <div class="card-bottom p-6 space-y-[12px] bg-white border-t-[3px] border-primary">
+            <p class="text-[11px] font-medium tracking-widest text-accent uppercase">Production</p>
+            <p class="text-[22px] font-medium leading-[28px] text-secondary">Ajay Pandit</p>
+            <p class="faded-text text-[14px] leading-[20px]">Head — Production & QC. Maintaining the highest quality standards across every print run.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="container">
+    <div class="w-full section-spacing vertical-layout-gap">
+      
+      <div class="w-full flex items-start flex-col gap-5">
+        <h2 class="text-[40px] font-medium leading-[46px] text-secondary">What We Print</h2>
+        <p class="faded-text text-[17px] leading-[24px]">We specialize in providing printing for the following types of items</p>
+      </div>
+
+    <div class="gap-[24px] grid grid-cols-12">
+
+  <!-- Religious Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/Firefly (2).png" alt="Religious Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Religious Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">Bible · Quran · Torah</span>
+    </div>
+  </div>
+
+  <!-- Novels -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/novels.png" alt="Novels" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Novels</p>
+      <span class="text-accent text-[12px] leading-[18px]">Paperback · Hardcover</span>
+    </div>
+  </div>
+
+  <!-- Children's Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/children.png" alt="Children's Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Children's Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">Colorful · Illustrated</span>
+    </div>
+  </div>
+
+  <!-- Board Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="./assets/products/abc.png" alt="Board Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Board Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">Toddler · Early Learning</span>
+    </div>
+  </div>
+
+  <!-- Coffee Table Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/coffe.png" alt="Coffee Table Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Coffee Table Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">Luxury · Large Format</span>
+    </div>
+  </div>
+
+  <!-- Journals -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/journal.png" alt="Journals" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Journals</p>
+      <span class="text-accent text-[12px] leading-[18px]">Premium · Leather Finish</span>
+    </div>
+  </div>
+
+  <!-- Diaries -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/diary.png" alt="Diaries" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Diaries</p>
+      <span class="text-accent text-[12px] leading-[18px]">Hardcover · Custom</span>
+    </div>
+  </div>
+
+  <!-- Notebooks -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/notebook.png" alt="Notebooks" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Notebooks</p>
+      <span class="text-accent text-[12px] leading-[18px]">Spiral · Hardcover</span>
+    </div>
+  </div>
+
+  <!-- Training Guides -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="/assets/products/traing.png" alt="Training Guides" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Training Guides</p>
+      <span class="text-accent text-[12px] leading-[18px]">Corporate · Educational</span>
+    </div>
+  </div>
+
+  <!-- Guide Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="./assets/products/edu.png" alt="Guide Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Guide Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">Travel · Reference</span>
+    </div>
+  </div>
+
+  <!-- K-12 Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="./assets/products/Firefly_Gemini Flash_School textbooks collection, languages math _science subjects, colorful covers, dark  320319.png" alt="K-12 Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">K-12 Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">School · Academic</span>
+    </div>
+  </div>
+
+  <!-- Comic Books -->
+  <div class="col-span-6 sm:col-span-4 md:col-span-3 card-wrapper bg-white shadow rounded-[4px] overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <div class="card-top bg-secondary w-full overflow-hidden h-[150px]">
+      <img class="w-full h-full object-cover hover:scale-105 transition-all duration-500" src="./assets/products/Firefly_Gemini Flash_Colorful comic books collection, vibrant covers, _dark navy background, professional  320319.png" alt="Comic Books" />
+    </div>
+    <div class="card-bottom p-4 border-t-[2px] border-primary">
+      <p class="text-[14px] leading-[20px] font-medium text-secondary">Comic Books</p>
+      <span class="text-accent text-[12px] leading-[18px]">Vibrant · Full Color</span>
+    </div>
+  </div>
+
+</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="bg-secondary">
+  <div class="container">
+    <div class="w-full section-spacing vertical-layout-gap">
+
+      <div class="w-full flex items-start flex-col gap-5">
+        <div class="tagline text-[14px] leading-[20px] opacity-[0.6] font-medium text-white">
+          Why Choose Us
+        </div>
+        <h2 class="text-[40px] font-medium leading-[46px] text-white">Why Print Printers?</h2>
+        <p class="text-white opacity-[0.6] text-[17px] leading-[24px] max-w-[600px]">With over 3 decades of extensive experience, we have built a solid reputation as premier book printers serving clients globally.</p>
+      </div>
+
+      <div class="gap-[24px] grid grid-cols-12">
+
+        <!-- Independent Project Management -->
+        <div class="col-span-12 sm:col-span-6 md:col-span-3 bg-white/10 border border-white/20 rounded-[4px] p-6 space-y-4 hover:bg-white/20 transition-all duration-300">
+          <div class="w-[48px] h-[48px] bg-primary rounded-full flex items-center justify-center">
+            <i class="ri-file-list-3-line text-white text-[22px]"></i>
+          </div>
+          <p class="text-white text-[18px] font-medium leading-[24px]">Independent Project Management</p>
+          <p class="text-white opacity-[0.6] text-[14px] leading-[20px]">Specialists in independent print execution and project management — delivering exceptional results globally.</p>
+        </div>
+
+        <!-- Unparalleled Communication -->
+        <div class="col-span-12 sm:col-span-6 md:col-span-3 bg-white/10 border border-white/20 rounded-[4px] p-6 space-y-4 hover:bg-white/20 transition-all duration-300">
+          <div class="w-[48px] h-[48px] bg-primary rounded-full flex items-center justify-center">
+            <i class="ri-message-3-line text-white text-[22px]"></i>
+          </div>
+          <p class="text-white text-[18px] font-medium leading-[24px]">Unparalleled Communication</p>
+          <p class="text-white opacity-[0.6] text-[14px] leading-[20px]">Real-time updates via emails, calls, videos and images — keeping you informed at every stage.</p>
+        </div>
+
+        <!-- Win-Win Solutions -->
+        <div class="col-span-12 sm:col-span-6 md:col-span-3 bg-white/10 border border-white/20 rounded-[4px] p-6 space-y-4 hover:bg-white/20 transition-all duration-300">
+          <div class="w-[48px] h-[48px] bg-primary rounded-full flex items-center justify-center">
+            <i class="ri-shake-hands-line text-white text-[22px]"></i>
+          </div>
+          <p class="text-white text-[18px] font-medium leading-[24px]">Win-Win Solutions</p>
+          <p class="text-white opacity-[0.6] text-[14px] leading-[20px]">Collaborative approach ensuring quality, quantity, timelines and commitments are met for all stakeholders.</p>
+        </div>
+
+        <!-- Options! Options! Options! -->
+        <div class="col-span-12 sm:col-span-6 md:col-span-3 bg-white/10 border border-white/20 rounded-[4px] p-6 space-y-4 hover:bg-white/20 transition-all duration-300">
+          <div class="w-[48px] h-[48px] bg-primary rounded-full flex items-center justify-center">
+            <i class="ri-layout-grid-line text-white text-[22px]"></i>
+          </div>
+          <p class="text-white text-[18px] font-medium leading-[24px]">Options! Options! Options!</p>
+          <p class="text-white opacity-[0.6] text-[14px] leading-[20px]">Print & Hold, Print-on-Demand, Bulk Door Delivery — high-volume to short-run, we handle it all.</p>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-4">
+        <button class="text-[14px] btn-animate border-white font-medium font-primary rounded-full text-secondary leading-[24px] border h-[50px] px-[18px] bg-white">
+          <span class="block h-full flex justify-center items-center shrink-0">Request a Quote</span>
+          <span class="block h-full flex justify-center items-center shrink-0">Request a Quote</span>
+        </button>
+        <button class="text-[14px] btn-animate border-white/40 overflow-hidden font-medium font-primary rounded-full text-white leading-[24px] border h-[50px] px-[18px]">
+          <span class="block h-full flex justify-center items-center shrink-0">View Our Work</span>
+          <span class="block h-full flex justify-center items-center shrink-0">View Our Work</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+     
+
+    
+
+      
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
